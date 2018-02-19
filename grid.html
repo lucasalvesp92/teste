@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <section class="content">
+        <div class="menu">menu</div>
+        <div class="events">events</div>
+        <div class="options">Options</div>
+        <div class="email">email</div>
+    </section>
+
+    <style>
+        *{padding: 0px; margin: 0px;}
+        .content {
+            background: #e7eef5;
+            /* width: 500px; */
+            
+            display: grid;
+            grid-template-columns: 70% 1fr 100px;
+             grid-template-rows: 40px 200px 40px auto auto;
+            grid-template-areas: 
+            "menu menu menu"
+            "events events options"
+            "email email email"; 
+        }
+
+        .menu {
+            grid-area: menu;
+            background: green;
+        }
+
+        .events {
+            grid-area: events;
+            background: red;
+        }
+
+        .options {
+            grid-area: options;
+            background: black;
+            color: white;
+        }
+
+        .email {
+            grid-area: email;
+            background: orange;
+        }
+    </style>
+
+</body>
+
+</html>

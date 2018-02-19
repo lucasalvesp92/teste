@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <section class="content">
+        <article class="item">01</article>
+        <article class="item">02</article>
+        <article class="item">03</article>
+        <article class="item">04</article>
+    </section>
+
+    <style>
+        .content {
+            background: #e7eef5;
+            /* width: 500px; */
+            height: 500px;
+            display: flex;
+            flex-direction: row; /* row, column, row-reverse, column-reverse */
+            flex-wrap: nowrap;/* quebra de linha* wrap-reverse*/ 
+            justify-content: flex-start;/* flex-start, flex-end, center, space-around, space-between*/
+            align-items: flex-start; /*flex-start, flex-end , center, stretch, baseline*/
+            
+        }
+
+        .item {
+
+            flex: 0 1 auto; /* 0 - grow, 1 - shrink, auto - basis*/
+            /* flex-grow: 0; /* Ocupa o resto da largura da div */
+            /*flex-shrink: 1; /* encolhe a nossa div */
+            /*flex-basis: 65px;  /* define um width de cada elemento caso nao tenha */
+            height: 50px; 
+            width: 100px;
+            color: black;
+            box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+            background: white;
+            margin: 5px;
+        }
+
+        .item:nth-child(1){
+            flex-grow: 1;
+        }
+        
+        /* 
+        ORDENACAO DOS FILHOS
+        .item:nth-child(2){
+            order: 3;
+        }
+        .item:nth-child(3){
+            order: 1;
+        }
+        .item:nth-child(4){
+            order: 2;
+        } */
+    </style>
+
+</body>
+
+</html>
